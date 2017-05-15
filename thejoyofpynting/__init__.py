@@ -13,7 +13,7 @@ __copyright__ = "Copyright (c) 2017 Dibbo"
 __credits__ = ["DeflatedPickle/Dibbo"]
 
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.2.0"
 __maintainer__ = "DeflatedPickle/Dibbo"
 __email__ = "DeflatedPickle@gmail.com"
 __status__ = "Development"
@@ -32,6 +32,13 @@ bob_types = {
         "place_y": 35,
         "size_x": 260,
         "size_y": 305
+    },
+    2: {
+        "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/JFNOMLL.png")),
+        "place_x": 797,
+        "place_y": 15,
+        "size_x": 225,
+        "size_y": 450
     }
 }
 
