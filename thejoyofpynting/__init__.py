@@ -22,7 +22,16 @@ bob_types = {
     0: {
         "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/nVMsfWs.png")),
         "place_x": 20,
-        "place_y": 60
+        "place_y": 60,
+        "size_x": 360,
+        "size_y": 280
+    },
+    1: {
+        "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/hCwwRCJ.png")),
+        "place_x": 450,
+        "place_y": 35,
+        "size_x": 260,
+        "size_y": 305
     }
 }
 
@@ -30,7 +39,7 @@ bob_types = {
 def paint_a_picture(file: str="", bobtype: int=0):
     image = Image.open(file)
     image = image.convert("RGBA")
-    image = image.resize((360, 280))
+    image = image.resize((bob_types[bobtype]["size_x"], bob_types[bobtype]["size_y"]))
 
     bob = Image.open(bob_types[bobtype]["image"])
     bob = bob.convert("RGBA")
