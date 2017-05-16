@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """"""
 
+import os
 import urllib.request
 
 from PIL import Image
@@ -20,21 +21,21 @@ __status__ = "Development"
 
 bob_types = {
     0: {
-        "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/nVMsfWs.png")),
+        "image": os.path.join(os.path.dirname(__file__), "1.png"), # urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/nVMsfWs.png")),
         "place_x": 20,
         "place_y": 60,
         "size_x": 360,
         "size_y": 280
     },
     1: {
-        "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/hCwwRCJ.png")),
+        "image": os.path.join(os.path.dirname(__file__), "2.png"), # urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/hCwwRCJ.png")),
         "place_x": 450,
         "place_y": 35,
         "size_x": 260,
         "size_y": 305
     },
     2: {
-        "image": urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/JFNOMLL.png")),
+        "image": os.path.join(os.path.dirname(__file__), "3.png"), # urllib.request.urlopen(urllib.request.Request("http://i.imgur.com/JFNOMLL.png")),
         "place_x": 797,
         "place_y": 15,
         "size_x": 225,
