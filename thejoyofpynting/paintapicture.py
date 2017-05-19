@@ -4,7 +4,7 @@
 
 from PIL import Image
 
-from .bottypes import bob_types
+from .bobtypes import bob_types
 
 
 def paint_a_picture(file: str="", bobtype: int=0):

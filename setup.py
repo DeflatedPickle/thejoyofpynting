@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="thejoyofpynting",
-      version="1.4.0",
+      version="1.4.1",
       description="A Python library that will make Bob Ross paint any given image.",
       author="DeflatedPickle/Dibbo",
       author_email="DeflatedPickle@gmail.com",
